@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "numerical.h"
+#include "asi.h"
 
 #define M_E 2.71828182845904523536028747135266250
 
@@ -33,6 +33,8 @@ int main(void){
 
     printf("Bisection: \n");
     bisection(func_bissection, -4, -3);
+
+    printf("Fixed point: \n");
     fixed_point(func_pf1, func_pf2, 0, 1, 0.00001);
 
     return EXIT_SUCCESS;
